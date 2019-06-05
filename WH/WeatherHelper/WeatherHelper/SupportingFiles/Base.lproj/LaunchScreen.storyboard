@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eAa-bO-Aig">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-Fo-CwR">
+                                <rect key="frame" x="120" y="236" width="135" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="BIY-QE-alk"/>
+                                    <constraint firstAttribute="height" constant="155" id="PpH-QX-5S1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-tr-rvg">
+                                <rect key="frame" x="120" y="423" width="135.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMJ-lw-inv">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zlD-1G-abm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iLX-6w-SXf" firstAttribute="trailing" secondItem="HMJ-lw-inv" secondAttribute="trailing" id="HLK-NO-7gc"/>
+                            <constraint firstAttribute="bottom" secondItem="HMJ-lw-inv" secondAttribute="bottom" id="JBj-Xq-0HC"/>
+                            <constraint firstItem="HMJ-lw-inv" firstAttribute="leading" secondItem="iLX-6w-SXf" secondAttribute="leading" id="VLx-Xf-W5x"/>
+                            <constraint firstItem="7EF-tr-rvg" firstAttribute="centerX" secondItem="eAa-bO-Aig" secondAttribute="centerX" id="hd6-39-7Jy"/>
+                            <constraint firstItem="7EF-tr-rvg" firstAttribute="centerY" secondItem="eAa-bO-Aig" secondAttribute="centerY" constant="100" id="jFb-YK-B2K"/>
+                            <constraint firstItem="OgL-Fo-CwR" firstAttribute="centerX" secondItem="eAa-bO-Aig" secondAttribute="centerX" id="lqL-a2-cKm"/>
+                            <constraint firstItem="OgL-Fo-CwR" firstAttribute="centerY" secondItem="eAa-bO-Aig" secondAttribute="centerY" constant="-20" id="tzG-EC-eJB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iLX-6w-SXf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="umbrella" width="429" height="534"/>
+    </resources>
+</document>
